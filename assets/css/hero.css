@@ -1,0 +1,256 @@
+.ak-hero * {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.ak-hero {
+    border-radius: 10px;
+    background: #F0F6FF;
+    margin: 0;
+    padding-left: 60px;
+    padding-right: 43px;
+}
+
+.ak-hero__header {
+    margin-bottom: 18px;
+    display: flex;
+
+    gap: 13px
+}
+
+.ak-hero__badge {
+    display: flex;
+    flex-direction: column;
+    width: 78px;
+    height: 122px;
+    background-color: white;
+    border: 1px solid #ECEDEB;
+    text-align: center;
+    clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
+    box-shadow: 0 3px 8px rgba(137, 137, 137, .1);
+}
+
+.ak-hero__badge-title {
+    display: inline-block;
+    height: 25px;
+    margin: 0 5px 11px 5px;
+    color: #FFF;
+    text-align: center;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.225px;
+    text-transform: uppercase;
+    clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0% 80%, 0% 0%);
+}
+
+.ak-hero__badge-title--color-1 {
+    background: #E34526;
+}
+
+.ak-hero__badge-title--color-2 {
+    background: #43C597;
+}
+
+.ak-hero__badge-title--color-3 {
+    background: #436FC5;
+}
+
+.ak-hero__badge-sub-title {
+    color: #031826;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.8%;
+}
+
+.ak-hero__badge-text {
+    color: #031826;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 101.8%;
+    letter-spacing: -0.22px;
+}
+
+.ak-hero__badge-icon {
+    width: 21px;
+    height: 28px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+}
+
+
+.ak-hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1.ak-hero__title {
+    color: #266DD3;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.8%;
+    letter-spacing: -0.72px;
+    margin-bottom: 22px;
+    margin-top: 0;
+    max-width: 455px;
+    display: inline-block;
+}
+
+
+div.ak-hero__desc p {
+    max-width: 425px;
+    color: #031826;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+    margin: 0;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+
+.ak-hero__info {
+    display: flex;
+}
+
+.ak-hero__info img {
+    width: 207px;
+    height: 40px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.ak-hero__info-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.ak-hero__info-title {
+    display: inline-block;
+    color: #5F6C7C;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+}
+
+.ak-hero__info-desc {
+    color: #5F6C7C;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.24px;
+}
+
+.ak-hero__sign {
+    display: inline-block;
+    color: #266DD3;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    padding-bottom: 34px;
+}
+
+.ak-hero__img {
+    position: relative;
+}
+
+.ak-hero__img img {
+    width: 355px;
+    height: 388px;
+    object-fit: contain;
+}
+
+.ak-hero__img-info {
+    position: absolute;
+    right: 0;
+    top: 30.5%;
+}
+
+.ak-hero__img-info-item {
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0px 4px 10px 0px rgba(137, 137, 137, 0.10);
+    width: 165px;
+    height: 47px;
+    color: #031826;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 99%;
+    letter-spacing: -0.22px;
+    margin-bottom: 10px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-right: 5px;
+    padding-left: 45px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:768px) {
+    .ak-hero {
+        padding: 23px 23px 36px 23px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .ak-hero__header {
+        margin-bottom: -42px;
+    }
+
+    h1.ak-hero__title {
+        margin-bottom: 8px;
+        margin-top: 50px;
+    }
+
+    div.ak-hero__desc p {
+        margin-bottom: 31px;
+    }
+
+    .ak-hero__info-wrap {
+        margin-bottom: 21px;
+    }
+
+    .ak-hero__info,
+    .ak-hero__content {
+        flex-direction: column;
+    }
+
+    .ak-hero__header {
+        justify-content: center;
+    }
+
+    .ak-hero__info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .ak-hero__text {
+        text-align: center;
+    }
+
+    .ak-hero__sign {
+        padding-bottom: 0;
+    }
+
+    .ak-hero__img img {
+        height: auto;
+    }
+}
